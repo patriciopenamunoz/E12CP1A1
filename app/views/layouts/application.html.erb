@@ -5,11 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <!-- Loader -->
+    <%= render 'layouts/loader' %>
+    <!-- Top menu -->
+    <%= render 'layouts/navbar' %>
+    <!-- Top content -->
     <%= yield %>
   </body>
 </html>
